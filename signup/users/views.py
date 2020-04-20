@@ -40,8 +40,21 @@ def register(request):
 
 
 def home_view(request, *args, **kwargs):
-    return render(request, 'index.html')
+    return render(request, 'homepage.html')
 
 
 def profile(request, *args, **kwargs):
     return render(request, 'profile.html')
+
+
+def device(request, *args, **kwargs):
+    return render(request, 'device.html')
+
+
+def about(request, *args, **kwargs):
+    return render(request, 'about.html')
+
+
+def library(request, *args, **kwargs):
+    return render(request, 'library.html')
+
