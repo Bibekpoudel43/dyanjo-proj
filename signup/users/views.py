@@ -1,9 +1,11 @@
-from http import HTTPStatus
-
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
-from django.http import HttpResponse
-
+from django.views import View
+from django.shortcuts import render
+from django.http import HttpResponse, StreamingHttpResponse, HttpResponseServerError
+from django.views.decorators import gzip
+import cv2
+import sys
 
 # Create your views here.
 def login(request):
@@ -47,10 +49,6 @@ def profile(request, *args, **kwargs):
     return render(request, 'profile.html')
 
 
-def device(request, *args, **kwargs):
-    return render(request, 'device.html')
-
-
 def about(request, *args, **kwargs):
     return render(request, 'about.html')
 
@@ -58,3 +56,28 @@ def about(request, *args, **kwargs):
 def library(request, *args, **kwargs):
     return render(request, 'library.html')
 
+
+def get_frame():
+    camera = cv2.VideoCapture(0)
+    while True:
+        _, img = camera.read()
+        imgencode = cv2.imencode('.jpg', img)[1]
+        stringData = imgencode.tostring()
+        yield (b'--frame\r\n'b'Content-Type: text/plain\r\n\r\n' + stringData + b'\r\n')
+    del (camera)
+
+
+def indexscreen(request):
+    try:
+        template = "device.html"
+        return render(request, template)
+    except HttpResponseServerError:
+        print("error")
+
+
+@gzip.gzip_page
+def dynamic_stream(request, stream_path="video.mp4"):
+    try:
+        return StreamingHttpResponse(get_frame(), content_type="multipart/x-mixed-replace;boundary=frame")
+    except:
+        return "error"
