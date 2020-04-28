@@ -1,10 +1,81 @@
+
 {% extends 'index.html' %}
 {% block title %}
         Device
 {% endblock %}
+<style>
+    #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+</style>
 {% block content %}
-           <div class="container" style="opacity: 0.9">
-            <form method="post" class="p-5" style="background-color: #808080;">
-            </form>
-        </div>
+           <div class="container-fluid p-5" style="background-color: #808080;">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>Available Cameras</h1>
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Cam 1</button> &nbsp;
+                            <a href="#" onclick="myFunction()" class="text-white">Add more..+</a>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+
+                              <!-- Modal content-->
+                              <div class="modal-content" style="background-color: #808080;">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Camera 1</h4>
+                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="img-fluid" id="myvideo" src="{% url 'videostream' stream_path='video.mp4' %}"/>
+                                         <div id="text" style="position: absolute; top: 87%; left: 5%; cursor:pointer">Save Image</div>
+                                         <div id="text" onclick="openFullscreen();" style="position: absolute; top: 87%; left: 87%;cursor:pointer">Max</div>
+                                    </div>
+                              </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+           </div>
+
+<script>
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+<!--Pop of box-->
+function myFunction() {
+  alert("This feature will be available soon");
+}
+</script>
 {% endblock %}

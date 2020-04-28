@@ -1,23 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be0eb6a-5f37-4cd9-a64d-527ad787582d" name="Default Changelist" comment="" />
+    <list default="true" id="8be0eb6a-5f37-4cd9-a64d-527ad787582d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/signup/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/signup/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/signup/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/signup/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/signup/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/users/templates/device.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/device.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/users/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZslUzAv8a0RxF9aT8kvZnqllqs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Django-Webcam-Streaming-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.cv">
+    <configuration name="cv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dyanjo-proj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/signup/users" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/signup/users/cv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dyanjo-proj" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -39,8 +74,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dyanjo-proj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/signup/users" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/signup/users/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cv" />
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -56,40 +114,148 @@
       <option name="presentableId" value="Default" />
       <updated>1585635701198</updated>
     </task>
+    <task id="LOCAL-00001" summary="profile added">
+      <created>1586302818479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586302818479</updated>
+    </task>
+    <task id="LOCAL-00002" summary="profile added and changes in views file">
+      <created>1586302906914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586302906914</updated>
+    </task>
+    <task id="LOCAL-00003" summary="login and profile url">
+      <created>1586302940939</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586302940939</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added login file">
+      <created>1586302961718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586302961718</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added some pages and worked on homepage">
+      <created>1587368941687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587368941687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added new urls">
+      <created>1587368978060</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587368978060</updated>
+    </task>
+    <task id="LOCAL-00007" summary="functions added to land on a respective urls">
+      <created>1587369014867</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587369014867</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added webcam functions">
+      <created>1588059624863</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588059624863</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="profile added" />
+    <MESSAGE value="profile added and changes in views file" />
+    <MESSAGE value="login and profile url" />
+    <MESSAGE value="added login file" />
+    <MESSAGE value="added some pages and worked on homepage" />
+    <MESSAGE value="added new urls" />
+    <MESSAGE value="functions added to land on a respective urls" />
+    <MESSAGE value="added webcam functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added webcam functions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1585645061342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1585645061342" />
+    <state x="442" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587369041126">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="442" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1587369041126" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587876232726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587876232726" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1588060089762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588060089762" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1587881847027">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587881847027" />
     <state x="505" y="280" key="Github.CreateGistDialog" timestamp="1585658276051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="505" y="280" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1585658276051" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1585636519962">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1587804183089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585636519962" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1585636519961">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587804183089" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1587804183089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585636519961" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1585636519961">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587804183089" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1587804183088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585636519961" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1585636519961">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587804183088" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1587804183089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585636519961" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1585658227060">
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587804183089" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1586263278816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585658227060" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585657775696">
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586263278816" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1586263278816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585657775696" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586263278816" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1586263278816">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586263278816" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1586263278816">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586263278816" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1587801486687">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587801486687" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1588060093346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588060093346" />
+    <state x="479" y="69" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1586263171716">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="69" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1366.728@0.0.1366.728" timestamp="1586263171716" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1588042654582">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588042654582" />
   </component>
 </project>
