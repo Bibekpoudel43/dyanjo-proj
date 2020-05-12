@@ -13,12 +13,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
+  {% load static %}
   .fakeimg {
     height: 200px;
     background: #aaa;
   }
   body {
-  background: #7a8586 url('https://www.elsetge.cat/myimg/f/105-1050853_wide-security-camera-wallpaper-hd.jpg') no-repeat center center fixed ;
+  background: #7a8586 url({% static 'cctv.png' %}) no-repeat center center fixed ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -70,13 +71,13 @@ background-color: #808080; !important"
         <div class="dropdown mt-2">
           <p class= "dropdown-toggle pt-2" type="button" id="dropdownMenu4" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          User
+          {{ user.get_username }}
           </p>
           <div class="dropdown-menu" style="left: -80px; background-color: #808080; color: white;" aria-labelledby="dropdownMenu4">
             <a class="dropdown-item lead" href="/users/profile">Profile</a>
             <a class="dropdown-item lead" href="#">Help</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Sign out</a>
+            <a class="dropdown-item" href="/users/logout">Sign out</a>
           </div>
         </div>
       </li>
