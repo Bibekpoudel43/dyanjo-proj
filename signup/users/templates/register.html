@@ -25,7 +25,7 @@ body {
   position: relative;
   margin: 5% auto;
   width: 420px;
-  height: 500px;
+  height: 550px;
   background: #FFF;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -156,17 +156,19 @@ button.social-signin.google {
 }
 </style>
 </head>
+<title>Register</title>
 <body>
-<form action="register" method="POST">
+<form action="register" method="POST" name="registration" >
   {% csrf_token %}
 <div id="login-box">
   <div class="left">
-    <h1>Sign up</h1>
 
-    <input type="text" name="username" placeholder="Username" required/>
+    <h1>Sign up</h1>
+      <input type="text" name="fname" placeholder="First Name" required/>
+    <input type="text" name="lname" placeholder="Last Name" required/>
+    <input type="text" name="username" placeholder="Username" required />
     <input type="text" name="email" placeholder="E-mail" required />
     <input type="password" name="password" placeholder="Password" required/>
-   <input type="password" name="password2" placeholder="Retype password"required/>
 
     <input type="submit" name="signup_submit" value="Sign me up" /> </br></br>
       <p style="padding-right: 80px">By signing up you agree to our
@@ -219,5 +221,49 @@ button.social-signin.google {
 </div>
 </form>
 
+<script src="js/form-validation.js">
+    // Wait for the DOM to be ready
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='registration']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      fname: "required",
+      lname: "required",
+      username: "required",
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      }
+    },
+    // Specify validation error messages
+    messages: {
+      fname: "Please enter your firstname",
+      lname: "Please enter your lastname",
+      username: "Please provide username",
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long"
+      },
+      email: "Please enter a valid email address"
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+</script>
 </body>
 </html>
