@@ -10,6 +10,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import logout
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseRedirect
+
+
 import numpy as np
 import urllib
 import cv2
@@ -49,7 +51,7 @@ def register(request):
         lname = request.POST['lname']
         username = request.POST['username']
         email = request.POST['email']
-        password = request.POST['password']
+        password = request.POST['password1']
 
         user = User.objects.create_user(first_name=fname, last_name=lname, username=username, email=email,
                                         password=password)
@@ -61,6 +63,7 @@ def register(request):
 
 def home_view(request, *args, **kwargs):
     return render(request, 'homepage.html')
+
 
 
 @login_required
