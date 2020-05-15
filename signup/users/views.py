@@ -83,7 +83,7 @@ def get_frame():
 
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'H264')
-    out = cv2.VideoWriter('D://face-detect/videos/video-saved.mp4', fourcc, 20.0, (640, 480))
+    out = cv2.VideoWriter('users/static/video/video-saved.mp4', fourcc, 20.0, (640, 480))
 
     # loop runs if capturing has been initialized.
     while True:
@@ -125,7 +125,7 @@ def get_frame():
             break
         # save image
         elif k == ord('s'):
-            cv2.imwrite(filename='D://face-detect/images/saved_img.jpg', img=img)
+            cv2.imwrite(filename='users/static/image/saved_img.jpg', img=img)
 
 @login_required
 def indexscreen(request):
@@ -162,7 +162,7 @@ def crop_img(request):
         for (x, y, w, h) in faces:
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             roi_color = image[y:y + h, x:x + w]
-            cv2.imwrite('D://face-detect/CroppedFaces/' + str(w) + str(h) + '_faces.jpg', roi_color)
+            cv2.imwrite('users/static/cropped/' + str(w) + str(h) + '_faces.jpg', roi_color)
         return redirect('/users/library')
     else:
         return render(request, 'library.html')
