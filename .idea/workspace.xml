@@ -1,35 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8be0eb6a-5f37-4cd9-a64d-527ad787582d" name="Default Changelist" comment="asas">
-      <change afterPath="$PROJECT_DIR$/signup/users/templates/image.html" afterDir="false" />
+    <list default="true" id="8be0eb6a-5f37-4cd9-a64d-527ad787582d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/forms/templates/wagtailforms/list_forms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/forms/templates/wagtailforms/list_submissions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/modeladmin/templates/modeladmin/choose_parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/modeladmin/templates/modeladmin/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/modeladmin/templates/modeladmin/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/modeladmin/templates/modeladmin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/modeladmin/templates/modeladmin/inspect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/redirects/templates/wagtailredirects/confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/redirects/templates/wagtailredirects/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/redirects/templates/wagtailredirects/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/redirects/templates/wagtailredirects/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/redirects/templates/wagtailredirects/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/search_promotions/templates/wagtailsearchpromotions/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/contrib/search_promotions/templates/wagtailsearchpromotions/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/bg/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/ca/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/es/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/gl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/he_IL/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/hr_HR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/hu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/hu/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/id_ID/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/is_IS/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/is_IS/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/it/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/ko/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/lv/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/lv/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/mn/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/nb/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/nl_NL/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/nl_NL/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/locale/sl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/static_src/wagtailimages/js/add-multiple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/static_src/wagtailimages/scss/focal-point-chooser.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/chooser/chooser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/chooser/select_format.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/edit_handlers/image_chooser_panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/homepage/site_summary_images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/images/_file_field_as_li.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/images/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/multiple/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/images/templates/wagtailimages/widgets/image_chooser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ar/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/be/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/bg/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/cy/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/es/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/gl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/hu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/it/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ka/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ko/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/lt/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/lt/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/lv/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/my/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/my/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/nb/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pt_PT/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/pt_PT/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ro/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ro/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/sl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/tet/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/tet/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/zh/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/zh/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/search/templates/wagtailsearch/queries/chooser_field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/ar/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/es/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/fa/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/gl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/he_IL/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/he_IL/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/hu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/hu/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/is_IS/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/ko/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/lv/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/lv/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/mn/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/nl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/tet/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/tr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/tr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wagtail/snippets/locale/zh/LC_MESSAGES/django.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/signup/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/signup/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/signup/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/signup/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/static/saved_img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/templates/device.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/device.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/templates/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/crop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.9.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.9.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.9.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.9.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/beautifulsoup4-4.9.0.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_html5lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/builder/_html5lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/formatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/formatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_html5lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_html5lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_soup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_soup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bs4/tests/test_tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589516677514</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="small changes made; user permission to certain pages">
+      <created>1591087406053</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1591087406069</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -372,7 +465,9 @@
     <MESSAGE value="filesystem added" />
     <MESSAGE value="requirement file added" />
     <MESSAGE value="directory location changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="directory location changed" />
+    <MESSAGE value="changes in url" />
+    <MESSAGE value="small changes made; user permission to certain pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes made; user permission to certain pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1585645061342">
@@ -391,10 +486,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589258917816" />
-    <state x="373" y="0" key="CommitChangelistDialog2" timestamp="1591087269111">
+    <state x="373" y="0" key="CommitChangelistDialog2" timestamp="1591088030320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="373" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591087269111" />
+    <state x="373" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591088030320" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589003598511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -439,10 +534,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589445844936" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589516680485">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591087414407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589516680485" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591087414407" />
     <state x="479" y="69" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1586263171716">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
