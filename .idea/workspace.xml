@@ -334,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591088078170</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="small changes made; user permission to certain page">
+      <created>1591091631513</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1591091631513</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -361,7 +368,8 @@
     <MESSAGE value="directory location changed" />
     <MESSAGE value="changes in url" />
     <MESSAGE value="small changes made; user permission to certain pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes made; user permission to certain pages" />
+    <MESSAGE value="small changes made; user permission to certain page" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes made; user permission to certain page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1585645061342">
@@ -380,10 +388,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589258917816" />
-    <state x="373" y="0" key="CommitChangelistDialog2" timestamp="1591088030320">
+    <state x="373" y="0" key="CommitChangelistDialog2" timestamp="1591091944561">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="373" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591088030320" />
+    <state x="373" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591091944561" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1589003598511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -428,10 +436,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589445844936" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591088081288">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591091637106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591088081288" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591091637106" />
     <state x="479" y="69" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1586263171716">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
