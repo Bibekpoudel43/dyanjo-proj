@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block title %}
+        Library
+{% endblock %}
+{% block content %}
+<form method="" action="" enctype="multipart/form-data" style="background-color: #808080;">
+    <h2 class="pt-3 text-center">Faces of Detected Users</h2>
+    <div class="row mt-3 pt-3 ml-4">
+        {% for dest in imgView %}
+        <div class="col-md-3 mt-3" style="background-color: #696969">
+            <p><img src="http://127.0.0.1:8000{{dest.image}}" width="180px" class="img-responsive mt-3 ml-4 text-center" alt="file image not found"></p>
+             <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Name: {{dest.fname}} {{dest.lname}}</p>
+                    <p></p>
+                    <p>Age: {{dest.age}}</p>
+                    <p>Gender: {{dest.gender}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</form>
+
+    </div>
+
+{% endblock %}
