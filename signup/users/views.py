@@ -1,22 +1,15 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
-from django.views import View
-from django.shortcuts import render
 from django.http import HttpResponse, StreamingHttpResponse, HttpResponseServerError
 from django.views.decorators import gzip
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
-from django.http import HttpResponseRedirect
+from .models import storeUserInfo
+from django.templatetags.static import static
 
-
-import numpy as np
-import urllib
 import cv2
-import sys
-import os
-
 filename = 'vid.mp4'
 
 
@@ -38,7 +31,8 @@ def login(request):
     else:
         return render(request, 'login.html')
 
-@login_required
+
+@login_required(login_url='login', redirect_field_name=None)
 def logout_view(request):
     logout(request)
     return redirect('login')
@@ -64,8 +58,7 @@ def home_view(request, *args, **kwargs):
     return render(request, 'homepage.html')
 
 
-
-@login_required
+@login_required(login_url='login', redirect_field_name=None)
 def profile(request, *args, **kwargs):
     return render(request, 'profile.html')
 
@@ -127,7 +120,8 @@ def get_frame():
         elif k == ord('s'):
             cv2.imwrite(filename='users/static/image/saved_img.jpg', img=img)
 
-@login_required
+
+@login_required(login_url='login', redirect_field_name=None)
 def indexscreen(request):
     try:
         template = "device.html"
@@ -143,7 +137,8 @@ def dynamic_stream(request, stream_path="video.mp4"):
     except:
         return "error"
 
-@login_required
+
+@login_required(login_url='login', redirect_field_name=None)
 def crop_img(request):
     if request.method == "POST":
         myfile = request.FILES['image-file']
@@ -162,7 +157,35 @@ def crop_img(request):
         for (x, y, w, h) in faces:
             cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
             roi_color = image[y:y + h, x:x + w]
-            cv2.imwrite('users/static/cropped/' + str(w) + str(h) + '_faces.jpg', roi_color)
-        return redirect('/users/library')
+            cv2.imwrite('users/static/cropped/faces.jpg', roi_color)
+
+            return redirect('http://127.0.0.1:8000/users/image')
     else:
-        return render(request, 'library.html')
+        return render(request, 'crop.html')
+
+
+def storeCroppedImage(request):
+    if request.method == "POST":
+        fname = request.POST['fname']
+        lname = request.POST['lname']
+        age = request.POST['age']
+        gender = request.POST['gender']
+
+        img_url = static('/cropped/faces.jpg')
+
+        u_detail = storeUserInfo(fname=fname, lname=lname, gender=gender, image=img_url,
+                                 age=age, user_id=request.user.id)
+        u_detail.save()
+        return redirect('http://127.0.0.1:8000/users/library')
+    else:
+        return render(request, 'image.html')
+
+
+@login_required(login_url='login', redirect_field_name=None)
+def viewImages(request):
+    imgView = storeUserInfo.objects.all()
+    if imgView.exists():
+        return render(request, 'library.html', {'imgView': imgView})
+    else:
+        return render(request, 'homepage.html')
+

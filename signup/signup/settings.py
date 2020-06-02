@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -74,19 +73,18 @@ WSGI_APPLICATION = 'signup.wsgi.application'
 import pyodbc
 
 DATABASES = {
-     'default': {
-         'ENGINE': 'sql_server.pyodbc',
-         'NAME': 'global-surveillance-system-db',
-         'USER': 'bibek43',
-         'PASSWORD': 'Bibek@45654',
-         'HOST': 'tcp:cctv-analytic.database.windows.net,1433',
-         'PORT': '1433',
-         'OPTIONS': {
-             'driver': 'SQL Server Native Client 11.0',
-         },
-     },
- }
-
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'global-surveillance-system-db',
+        'USER': 'bibek43',
+        'PASSWORD': 'Bibek@45654',
+        'HOST': 'tcp:cctv-analytic.database.windows.net,1433',
+        'PORT': '1433',
+        'OPTIONS': {
+            'driver': 'SQL Server Native Client 11.0',
+        },
+    },
+}
 
 # set this to False if you want to turn off pyodbc's connection pooling
 DATABASE_CONNECTION_POOLING = False
@@ -126,3 +124,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_URL = '/login/'

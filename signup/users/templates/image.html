@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% block title %}
+        Image
+{% endblock %}
+{% block content %}
+   <div class="container" >
+       <form method="POST" action="image" enctype="multipart/form-data">
+           {% csrf_token %}
+           {% load static %}
+                <h3>Detected Face </h3>
+                <p><img src="{% static '/cropped/faces.jpg' %}" width="170px" class="img-responsive mt-3" alt=""not an image></p>
+
+                   <!-- Trigger the modal with link clicked -->
+                    <a data-toggle="modal" href="#myModal" class="ml-4 bg-danger text-white p-2">Enter Details</a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title bg-primary p-1">Enter user information</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" name="fname" placeholder="First Name" required/>
+                            <input type="text" name="lname" placeholder="Last Name" required/>
+                            <input type="number" name="age" placeholder="Age" min="1" max="150" required />
+                            <input type="text" name="gender" placeholder="Gender" class="mt-1" required />
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+      </form>
+    </div>
+    </div>
+{% endblock %}

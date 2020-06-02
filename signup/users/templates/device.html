@@ -35,8 +35,8 @@
                         <h1 class="mb-3">Available Cameras</h1>
                             <!-- Trigger the modal with a button -->
                             <h4 class="bg-danger d-inline p-2" >Cam 1</h4> &nbsp;
-                            <a href="#" onclick="myFunction()" class="text-white">Add more..+</a>
-
+                                        <p class="mt-3">Press 'S' to Save</p>
+                                        <p>Press 'Esc' to quit</p>
                               <!-- Modal -->
                               <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
@@ -49,8 +49,8 @@
                                     </div>
                                     <div class="modal-body">
                                         <img class="img-fluid" id="myvideo" src="{% url 'videostream' stream_path='video.mp4' %}"/>
-                                         <div id="text" style="position: absolute; top: 87%; left: 5%; cursor:pointer">Save Image</div>
-                                         <div id="text" onclick="openFullscreen();" style="position: absolute; top: 87%; left: 87%;cursor:pointer">Max</div>
+                                         <div style="position: absolute; top: 87%; left: 5%; cursor:pointer">Save Image</div>
+                                         <div onclick="openFullscreen();" style="position: absolute; top: 87%; left: 87%;cursor:pointer">Max</div>
                                     </div>
                               </div>
                     </div>
@@ -71,11 +71,6 @@ function openFullscreen() {
   } else if (elem.msRequestFullscreen) { /* IE/Edge */
     elem.msRequestFullscreen();
   }
-}
-
-<!--Pop of box-->
-function myFunction() {
-  alert("This feature will be available soon");
 }
 </script>
 {% endblock %}
