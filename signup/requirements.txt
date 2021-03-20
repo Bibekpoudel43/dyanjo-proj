@@ -13,7 +13,7 @@ django-pyodbc-azure==2.1.0.0
 Flask==1.1.2
 imutils==0.5.3
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 legacy==0.1.6
 MarkupSafe==1.1.1
 numpy==1.18.3
