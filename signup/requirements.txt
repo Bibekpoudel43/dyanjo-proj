@@ -20,7 +20,7 @@ numpy==1.18.3
 opencv-python==3.4.9.33
 password-strength==0.0.3.post2
 patterns==0.3
-Pillow==7.1.2
+Pillow==9.0.1
 pyodbc==4.0.30
 pytz==2019.3
 six==1.14.0
