@@ -16,7 +16,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 legacy==0.1.6
 MarkupSafe==1.1.1
-numpy==1.18.3
+numpy==1.22.0
 opencv-python==3.4.9.33
 password-strength==0.0.3.post2
 patterns==0.3
